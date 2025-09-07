@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Projects — RA Digital Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;500&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    /* Page-local tweaks; main styles live in styles.css add-on below */
+    .projects-hero { padding: 3rem 0 1.5rem; border-top: 2px solid #e6e0d6; border-bottom: 2px solid #e6e0d6; background:#efe7d8; }
+    .projects-hero h1 { margin: 0 0 .5rem; }
+    .proj-wrap { max-width: 900px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Main">
+      <div class="brand" aria-label="Site name">RA <span>Digital Portfolio</span></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="ABOUT.html">About</a>
+        <a href="WORK.html">Works</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="AI in Construction.html">AI in Construction</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page intro -->
+  <section class="projects-hero">
+    <div class="wrap">
+      <h1>Projects</h1>
+      <p class="muted">Coursework deliverables grouped as expandable sections. Open any item to view a brief, artifacts, and notes.</p>
+    </div>
+  </section>
+
+  <!-- Accordions -->
+  <section class="section">
+    <div class="wrap proj-wrap">
+
+      <!-- 1) Evaluating LLMs -->
+     <details class="accordion" id="llm-eval">
+  <summary>
+    <span>Evaluating LLMs using Construction Scenario Prompts</span>
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16">
+      <path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/>
+    </svg>
+  </summary>
+  <div class="accordion-body">
+    <p class="muted"><strong>Brief:</strong> This project explores how different prompt styles and levels of contextual information affect the quality, relevance, and accuracy of AI-generated responses across various LLMs (GPT, Gemini, Grok, Claude). The focus is on prompt engineering and context design in construction-related scenarios to improve communication and productivity, and to evaluate how different LLMs respond to the same prompt.</p>
+
+    <p><strong>Scenario:</strong> Draft a COR for relocating tray and 4-inch EMT at Area A-110. The work is performed during night hours.</p>
+
+    <div class="btn-row" style="margin-top:.75rem;">
+      <a class="btn dark" href="https://pdf.ac/Qpy6fpwB5" target="_blank" rel="noopener">See more →</a>
+    </div>
+  </div>
+</details>
+
+
+
+      <!-- 2) Creation of GPT -->
+     <details class="accordion" id="gpt-creation">
+  <summary>
+    <span>Creation of GPT</span>
+    <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16">
+      <path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/>
+    </svg>
+  </summary>
+  <div class="accordion-body">
+    <p class="muted"><strong>Description:</strong> This focuses on how generative AI can be used in the construction industry. Students identify real-world field problems and create a custom GPT with ChatGPT to tackle or improve specific tasks.</p>
+
+    <div class="btn-row" style="margin-top:.75rem;">
+      <!-- Replace # with your PDF link when ready -->
+      <a class="btn dark" href="#" target="_blank" rel="noopener" aria-disabled="true">See more →</a>
+    </div>
+  </div>
+</details>
+
+
+
+      <!-- 3) AI tools in construction -->
+      <details class="accordion" id="ai-tools">
+        <summary>
+          <span>AI Tools in Construction</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </summary>
+        <div class="accordion-body">
+          <p class="muted">Curated list of AI tools with practical construction use cases and quick-start notes.</p>
+          <ul class="bullets">
+            <li>Estimating & takeoffs (e.g., Kreo)</li>
+            <li>Schedule intelligence (e.g., ALICE)</li>
+            <li>Docs & QA/QC assistants, LEED helpers, FM data tools</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn dark" href="#" target="_blank" rel="noopener">Tool List →</a>
+            <a class="btn ghost" href="#" target="_blank" rel="noopener">Notes / Reviews →</a>
+          </div>
+        </div>
+      </details>
+
+      <!-- 4) Book / Research review -->
+      <details class="accordion" id="book-review">
+        <summary>
+          <span>Book / Research Review</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </summary>
+        <div class="accordion-body">
+          <p class="muted">Critical summary translating insights into field-ready lessons and workflows.</p>
+          <ul class="bullets">
+            <li>Key takeaways & quotes</li>
+            <li>Implications for PM/PE roles and teams</li>
+            <li>Actionable checklists or templates</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn dark" href="#" target="_blank" rel="noopener">Read Review →</a>
+            <a class="btn ghost" href="#" target="_blank" rel="noopener">References →</a>
+          </div>
+        </div>
+      </details>
+
+      <!-- 5) Final project -->
+      <details class="accordion" id="final-project">
+        <summary>
+          <span>Final Project</span>
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path d="M8 10l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        </summary>
+        <div class="accordion-body">
+          <p class="muted">Capstone deliverable combining data, process design, and AI-assisted decision support.</p>
+          <ul class="bullets">
+            <li>Problem framing, stakeholders, constraints</li>
+            <li>System or workflow design (with AI touchpoints)</li>
+            <li>Evidence: results, lessons, and next steps</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn dark" href="#" target="_blank" rel="noopener">Overview →</a>
+            <a class="btn ghost" href="#" target="_blank" rel="noopener">Slides / PDF →</a>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="flex">
+        <span class="kicker">Stay in touch</span>
+        <a href="mailto:raparna@asu.edu">raparna@asu.edu</a>
+      </div>
+      <p class="muted" style="margin:.5rem 0 0;">© 2025 Roshni Aparna • RA Digital Portfolio</p>
+    </div>
+  </footer>
+</body>
+</html>

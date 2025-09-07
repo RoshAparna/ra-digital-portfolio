@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contact — RA Digital Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;500&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    /* Page-specific accents to match the reference */
+    .contact-hero{
+      background:#1e1a17;
+      color:#efe7d8;
+      padding:4rem 0 2.5rem;
+      border-top:2px solid #dbcdb6;
+      border-bottom:2px solid #dbcdb6;
+    }
+    .contact-hero h1{
+      font-size:clamp(2.2rem, 6vw, 4rem);
+      line-height:1.05;
+      margin:0;
+      letter-spacing:.2px;
+    }
+    .contact-hero h1 .sub{ display:block; font-weight:800; }
+
+    .contact-body{
+      background:#efe7d8;
+      padding:2rem 0 2.5rem;
+      border-bottom:2px solid #dbcdb6;
+    }
+    .contact-grid{
+      display:grid;
+      grid-template-columns: 2fr 1fr;
+      gap:2rem;
+      align-items:start;
+    }
+    @media (max-width: 900px){
+      .contact-grid{ grid-template-columns: 1fr; }
+    }
+
+    .contact-intro p{
+      font-size:1.05rem; line-height:1.9; color:#2b2723; margin:0 0 1rem;
+    }
+    .contact-intro a.mail{
+      display:inline-block; margin-top:.5rem; font-weight:600;
+      text-decoration:underline; color:#284B63;
+    }
+
+    .contact-card{
+      background:#fff; border:1px solid #e2dbd1; border-radius:14px;
+      padding:1.25rem 1.25rem 1rem;
+      box-shadow:0 1px 0 rgba(0,0,0,.08), inset 0 1px 0 rgba(255,255,255,.4);
+    }
+    .contact-card h3{ margin:.25rem 0 1rem; }
+
+    .social-list{ list-style:none; padding:0; margin:0; }
+    .social-list li{ border-bottom:1px solid #e7dfd4; }
+    .social-list li:last-child{ border-bottom:none; }
+    .social-list a{
+      display:flex; align-items:center; gap:.6rem; padding:.5rem 0;
+      color:#284B63; text-decoration:none;
+    }
+    .social-list a:hover{ color:#3C6E71; }
+
+    .subscribe{
+      background:#1e1a17; color:#efe7d8; padding:2rem 0 2.5rem;
+      border-top:2px solid #2c2622; border-bottom:2px solid #2c2622;
+    }
+    .subscribe .wrap > div{
+      border:1px solid rgba(255,255,255,.15);
+      border-radius:12px; padding:1.25rem; position:relative;
+    }
+    .subscribe h2{ margin:.25rem 0 0.5rem; }
+    .subscribe p{ margin:0 0 1rem; color:#d7d0c8; }
+
+    .subscribe-form{
+      display:flex; gap:.5rem; flex-wrap:wrap;
+    }
+    .subscribe-form input[type="email"]{
+      flex:1 1 260px; padding:.7rem .9rem; border-radius:10px; border:1px solid #3a332e; background:#151210; color:#efe7d8;
+    }
+    .subscribe-form input[type="email"]::placeholder{ color:#9c9288; }
+    .subscribe-form button{
+      padding:.7rem 1rem; border-radius:999px; border:1px solid transparent;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Main">
+      <div class="brand" aria-label="Site name">RA <span>Digital Portfolio</span></div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="ABOUT.html">About</a>
+        <a href="WORK.html">Works</a>
+        <a href="AI in Construction.html">AI in Construction</a>
+        <a class="active" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Big dark hero -->
+  <section class="contact-hero">
+    <div class="wrap">
+      <h1>Want to reach out to me?<span class="sub">Let’s chat!</span></h1>
+    </div>
+  </section>
+
+  <!-- Two-column body -->
+  <section class="contact-body">
+    <div class="wrap contact-grid">
+      <!-- Left: intro -->
+      <div class="contact-intro">
+        <p>
+          Like what you see? Let’s connect. <br>
+          I’d love to hear about your ideas, projects, or opportunities where my skills can make an impact.
+        </p>
+        <a class="mail" href="mailto:raparna@asu.edu">Email me at raparna@asu.edu →</a>
+
+      
+      </div>
+
+      <!-- Right: social/contact card -->
+      <aside class="contact-card">
+        <h3>Elsewhere</h3>
+        <ul class="social-list">
+          <li>
+            <a href="mailto:raparna@asu.edu">
+              <!-- mail icon -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M4 6l8 6 8-6" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              raparna@asu.edu
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/roshni-aparna" target="_blank" rel="noopener">
+              <!-- LinkedIn -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM9 8h4.8v2.2h.07c.67-1.27 2.32-2.6 4.78-2.6C22.4 7.6 24 10 24 14.1V24h-5v-8.7c0-2.1-.04-4.8-2.93-4.8-2.93 0-3.38 2.3-3.38 4.6V24H9z"/>
+              </svg>
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/roshniaparna/" target="_blank" rel="noopener">
+              <!-- Instagram -->
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+              </svg>
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Subscribe style section (visual echo of reference) -->
+  <section class="subscribe">
+    <div class="wrap">
+      <div>
+        <h2>Subscribe</h2>
+        <p>Get occasional updates on projects, articles, and templates.</p>
+        <!-- You can wire this to Formspree/Mailchimp later -->
+        <form class="subscribe-form" onsubmit="return false">
+          <label for="email" class="sr-only">Email address</label>
+          <input id="email" type="email" placeholder="name@example.com" aria-label="Email address"/>
+          <button class="btn primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="flex">
+        <span class="kicker">Stay in touch</span>
+        <a href="mailto:raparna@asu.edu">raparna@asu.edu</a>
+      </div>
+      <p class="muted" style="margin:.5rem 0 0;">© 2025 Roshni Aparna • RA Digital Portfolio</p>
+    </div>
+  </footer>
+</body>
+</html>
