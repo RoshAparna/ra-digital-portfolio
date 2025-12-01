@@ -465,3 +465,99 @@ label{font-weight:600; display:block; margin:.75rem 0 .35rem}
   border-color: var(--teal);
   color: var(--teal);
 }
+
+/* ===== ACCORDION LAYOUT FIX — add at end of style.css ===== */
+
+/* container that centers the whole column of accordions */
+.accordion-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* stack that constrains width and keeps all accordions identical width */
+.accordion-stack {
+  width: 100%;
+  max-width: var(--max);      /* uses your existing --max (1100px) */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+  padding: 0 12px;            /* small side padding for narrow screens */
+}
+
+/* ensure each <details class="accordion"> fills the parent's width */
+.accordion-stack > .accordion {
+  width: 100%;
+  margin: 0;                  /* override any per-accordion margins */
+  box-sizing: border-box;
+}
+
+/* make summary fill the available width and prevent inline width shenanigans */
+.accordion > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* if any accordion had been set to display:block or inline styles, force consistency */
+.accordion, .accordion * {
+  box-sizing: border-box !important;
+}
+
+/* small responsive tweak: reduce max-width on very narrow screens */
+@media (max-width: 520px) {
+  .accordion-stack { padding: 0 8px; gap: 10px; }
+  .accordion > summary { padding-left: .9rem; padding-right: .9rem; }
+}
+
+/* ===== ACCORDION LAYOUT FIX — add at end of style.css ===== */
+
+/* container that centers the whole column of accordions */
+.accordion-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* stack that constrains width and keeps all accordions identical width */
+.accordion-stack {
+  width: 100%;
+  max-width: var(--max);      /* uses your existing --max (1100px) */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+  padding: 0 12px;            /* small side padding for narrow screens */
+}
+
+/* ensure each <details class="accordion"> fills the parent's width */
+.accordion-stack > .accordion {
+  width: 100%;
+  margin: 0;                  /* override any per-accordion margins */
+  box-sizing: border-box;
+}
+
+/* make summary fill the available width and prevent inline width shenanigans */
+.accordion > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* if any accordion had been set to display:block or inline styles, force consistency */
+.accordion, .accordion * {
+  box-sizing: border-box !important;
+}
+
+/* small responsive tweak: reduce max-width on very narrow screens */
+@media (max-width: 520px) {
+  .accordion-stack { padding: 0 8px; gap: 10px; }
+  .accordion > summary { padding-left: .9rem; padding-right: .9rem; }
+}
